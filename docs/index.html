@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/styles.css" rel="stylesheet">
+    <link href="images/favicon.png" rel="icon">
+    <title>Notes App</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">Notes-app</h1>
+            <h2 class="header__subtitle">Take notes and never forget</h2>
+        </div>
+    </header>
+    <div class="actions">
+        <div class="actions__container">
+            <input id="search-text" type="text" class="input" placeholder="Input Search">
+            <select id="filter-by" class="dropdown">
+                <option value="byEdited">Sory by last Edited</option>
+                <option value="byCreated">Sort by recently created</option>
+                <option value="alphabetical">sort alphabetically </option>
+            </select>
+        </div>
+    </div>
+    <div class="container">
+        <button id="create-note" class="button">Create Note</button>
+        <button id="remove-all" class="button button--secondary">Remove All</button>
+        <div id="notes"></div>
+    </div>
+    <script src="scripts/index-bundle.js"></script>
+</body>
+</html>
