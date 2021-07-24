@@ -1,4 +1,4 @@
-import { createNote, removeAll } from "./notes";
+import { createNote, removeAll, loadNotes } from "./notes";
 import { setFilters } from "./filters"
 import { renderNotes } from "./views"
 
