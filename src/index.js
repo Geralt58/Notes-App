@@ -30,6 +30,7 @@ document.querySelector('#filter-by').addEventListener('change', (e) => {
 
 window.addEventListener('storage', (e) => {
     if (e.key === 'notes') {
+        loadNotes()
         renderNotes()
     }
 })
